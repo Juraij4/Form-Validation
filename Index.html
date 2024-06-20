@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+
+        <div class="container">
+            <div class="header">
+                <h2>REGISTRATION</h2>
+            </div>
+                <form action="">
+                    <div class="input_group">
+                        <label for="">Username</label>
+                        <input type="text" id="username" name="username" onkeyup="validatename()" placeholder="Enter a name"  maxlength="20">
+                        <span id="name_error"></span>
+                    </div>
+                    <div class="input_group">
+                        <label for="">Email</label>
+                        <input type="text" id="email" name="email" onkeyup="validateemail()" placeholder="Enter a email address" maxlength="30">
+                        <span id="email_error"></span>
+                    </div>
+                    <div class="input_group">
+                        <label for="">password</label>
+                        <input type="password" id="password" name="password" onkeyup="validatepassword()" placeholder="Enter a password" maxlength="20">
+                        <i class="fa-solid fa-eye" id="show1"></i>
+                        <span id="password_error"></span>
+                    </div>
+                    <div class="input_group">
+                        <label for="">password</label>
+                        <input type="password" id="cpassword" name="cpassword" onkeyup="validatecpassword()" placeholder="Confirm password" maxlength="20">
+                        <i class="fa-solid fa-eye" id="show2"></i>
+                        <span id="cpassword_error"></span>
+                    </div>
+                    <div class="input_group">
+                        <label for="">phone</label>
+                        <input type="tel" id="phone" name="phone" onkeyup="validatephone()" min="0" placeholder="Enter contact number" maxlength="10" >
+                        <span id="phone_error"></span>
+                    </div>
+                    <div class="input_group">
+                        <label for="">dob</label>
+                        <input type="date" id="dob" required name="dob" oninput="validatedob()">
+                        <span id="dob_error"></span>
+                    </div>
+
+                    <button  onclick="return validateform()">submit</button>
+                    <span id="sub_error"></span>
+                    
+                </form>
+
+                
+        
+        </div>
+
+
+
+        <script src="Index.js"></script>
+</body>
+</html>

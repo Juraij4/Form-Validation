@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.clss1 p{
+    
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 100%;
+    width: 35vw;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 3px 4px #cdcaca;
+    overflow: hidden;
+}
+
+
+.container .header{
+    background-color: rgb(212, 206, 206);
+    padding: 30px 0;
+}
+
+.container .header h2{
+    text-align: center;
+}
+
+
+form{
+    padding: 15px;
+    margin: 10px;
+}
+
+form .input_group{
+    margin-bottom: 5px;
+    position: relative;
+}
+.input_group label{
+    text-transform: uppercase;
+
+}
+
+.input_group input{
+    position: block;
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 2px solid #f0f0f0;
+    margin: 8px;
+    font-size: 14px;
+   
+
+}
+.input_group #show1{
+    position: absolute;
+    top: 45px;
+    right: 0;
+    cursor: pointer;
+    transform: translateY(-50%);
+    
+}
+
+.input_group #show2{
+    position: absolute;
+    top: 43px;
+    right: 0;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+
+
+
+.input_group input:focus{
+    outline: 0;
+    border-color: #797373;
+
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #cdcaca;
+    text-transform: uppercase;
+    border-radius: 5px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+}
+
+button:hover{
+    background-color: #797373;
+}
+
+span{
+    color: red;
+    margin: 10px 0;
+    font-size: 13px;
+    
+}
+
+span i{
+    color: green;
+}
+
+/* .input_group #show1{
+    position: absolute;
+    right: 34.5%;
+    top: 45%;
+}
+
+.input_group #show2{
+    position: absolute;
+    right: 34.5%;
+    top: 56.5%;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+    .container{
+        width: 100%;
+        max-width: 65%;
+    }
+
+
+}
+
+
+
+
